@@ -1,0 +1,18 @@
+# Déploiement Render en un clic : https://render.com/docs/blueprint-spec
+services:
+  - type: web
+    name: messenger
+    runtime: node
+    plan: free
+    buildCommand: npm ci --omit=dev
+    startCommand: node server.js
+    healthCheckPath: /
+    envVars:
+      - key: NODE_VERSION
+        value: "22"
+      - key: DATA_DIR
+        value: /opt/render/project/src/data
+    disk:
+      name: messenger-data
+      mountPath: /opt/render/project/src/data
+      sizeGB: 1

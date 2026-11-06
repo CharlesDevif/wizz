@@ -1,0 +1,19 @@
+[package]
+name = "wizz"
+version = "0.7.0"
+description = "Wizz : recréation nostalgique de la messagerie instantanée de 2005"
+edition = "2021"
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+tauri = { version = "2", features = ["tray-icon", "image-png"] }
+tauri-plugin-notification = "2"
+serde_json = "1"
+
+[profile.release]
+codegen-units = 1
+lto = true
+opt-level = "s"
+strip = true

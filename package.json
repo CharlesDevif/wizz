@@ -1,0 +1,22 @@
+{
+  "name": "wizz",
+  "version": "1.0.0",
+  "description": "Wizz : recréation nostalgique de la messagerie instantanée de 2005 (React + Node)",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "build": "cd web && npx vite build",
+    "dev": "cd web && npx vite",
+    "test": "sh tests/run.sh"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ws": "^8.18.0"
+  },
+  "private": true
+}
