@@ -2,6 +2,10 @@
 
 Recréation nostalgique de l'expérience MSN Messenger 7.5 : fenêtre de connexion, liste de contacts, fenêtres de conversation, les 76 émoticônes, le Wizz, les sons, les Winks, les jeux… avec un **vrai serveur temps réel** et une **application desktop**. Interface **React** (Vite), serveur **Node** (WebSocket), desktop **Tauri**.
 
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/CharlesDevif/wizz)
+
+Démo en ligne (contacts simulés) : https://claude.ai/artifact/DszN7apgnWYBDsWjBiQ58P · Code : https://github.com/CharlesDevif/wizz
+
 ## Lancer
 
 ```bash
